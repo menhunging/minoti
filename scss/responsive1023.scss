@@ -1,0 +1,131 @@
+@media (min-width: 1024px) {
+  .menu {
+    display: block !important;
+  }
+
+  .menu-overlay {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .header {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .header-basket__text {
+    display: none;
+  }
+
+  .header-phone__text {
+    display: none;
+  }
+
+  .header-adress {
+    display: none;
+  }
+
+  .header-top {
+    padding: 12px 15px;
+
+    .logo {
+      @include transform(translateX(-26px));
+      width: 80px;
+    }
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 320px;
+    background-color: $colorWhite;
+    padding: 42px 15px 15px;
+    z-index: 10;
+
+    &.opened {
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    li {
+      & + li {
+        border-top: solid 1px $colorSimple;
+      }
+
+      &:last-child {
+        border-bottom: solid 1px $colorSimple;
+      }
+    }
+
+    a {
+      color: $colorSimple;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 15px 0;
+      display: block;
+    }
+
+    .menu-mobile-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      margin-top: 3px;
+
+      .header-phone {
+        display: flex;
+
+        &__text {
+          display: block;
+        }
+      }
+
+      .header-adress {
+        display: flex;
+
+        &__text {
+          display: block;
+          max-width: 80%;
+        }
+      }
+    }
+  }
+
+  .grettings {
+    max-height: 450px;
+  }
+
+  .btn {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .grettings__content {
+    padding: 20px 15px;
+  }
+}

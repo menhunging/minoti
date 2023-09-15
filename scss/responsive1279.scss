@@ -1,0 +1,62 @@
+@media (max-width: 1279px) {
+  h1 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .header {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .header-top {
+    gap: 16px;
+    padding: 10px 20px;
+
+    .logo {
+      width: 100px;
+      @include transform(translateX(-64px));
+    }
+  }
+
+  .grettings {
+    padding: 0px 20px 0;
+    max-height: 600px;
+  }
+
+  .grettings__content {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 25px;
+  }
+
+  .btn--arrow::after,
+  .btn--arrow::before {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+  }
+
+  .btn--arrow::before {
+    margin-left: -34px;
+  }
+
+  .section-controls {
+    margin-top: 20px;
+  }
+}

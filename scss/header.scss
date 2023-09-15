@@ -1,0 +1,99 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $colorSimple-a8;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: $colorWhite;
+  z-index: 5;
+  background: rgba(51, 51, 51, 0.8);
+  backdrop-filter: blur(8px);
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    @include transition(all 0.3s);
+
+    path {
+      @include transition(all 0.3s);
+    }
+  }
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 35px;
+
+  .logo {
+    width: 180px;
+    margin: 0 auto;
+    @include transform(translateX(-73px));
+  }
+}
+
+.header-col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-search__button {
+  display: flex;
+  align-items: center;
+}
+
+.header-search,
+a.header-col {
+  cursor: pointer;
+  @include transition(color 0.3s);
+  @include text-decoration-hover($colorWhite);
+}
+
+.menu {
+  padding: 12px 0;
+  border-top: solid 1px $colorWhite;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  li {
+  }
+
+  a {
+    @include text-decoration-hover($colorWhite);
+  }
+}
+
+.menu-mobile-info {
+  display: none;
+  color: $colorBlack;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+
+  svg {
+    color: $colorBlack;
+
+    path {
+      fill: $colorBlack;
+    }
+  }
+}
+
+.menu-close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  cursor: pointer;
+}

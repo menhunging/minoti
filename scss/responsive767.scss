@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+  h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .header-search__text {
+    display: none;
+  }
+
+  .header-top .logo {
+    @include transform(translateX(0));
+  }
+
+  .grettings {
+    max-height: 216px;
+    padding: 62px 15px 15px;
+    min-height: 216px;
+    max-height: inherit;
+    height: auto;
+  }
+
+  .grettings__content {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .section-controls {
+    margin-top: 15px;
+  }
+}

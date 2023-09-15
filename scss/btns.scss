@@ -1,0 +1,79 @@
+.btn {
+  -webkit-appearance: none;
+  @include border-radius(20px);
+  @include transition(all 0.3s);
+  position: relative;
+  color: $colorSimple;
+  text-align: center;
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  border: solid 1px $colorSimple;
+
+  &:hover {
+    background-color: $colorSimple;
+    color: $colorWhite;
+  }
+
+  &--arrow {
+    @include after {
+      @extend %btn-arrow;
+      background-image: url(../img/svg/arrow-left-black.svg);
+      order: 2;
+    }
+
+    @include before {
+      @extend %btn-arrow;
+      background-image: url(../img/svg/arrow-left-white.svg);
+      opacity: 0;
+      order: 3;
+      margin-left: -42px;
+    }
+  }
+
+  &--white {
+    color: $colorWhite;
+    border-color: $colorWhite;
+
+    &::after {
+      background-image: url(../img/svg/arrow-left-white.svg);
+    }
+
+    &::before {
+      background-image: url(../img/svg/arrow-left-black.svg);
+    }
+
+    &:hover {
+      background-color: $colorWhite;
+      color: $colorSimple;
+    }
+  }
+}
+
+%btn-arrow {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-position: center;
+
+  &:hover {
+    &::after {
+      opacity: 0;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
