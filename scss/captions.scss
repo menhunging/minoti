@@ -1,5 +1,9 @@
 .caption {
   font-weight: 500;
+
+  & + .caption {
+    margin-top: 16px;
+  }
 }
 
 h1 {

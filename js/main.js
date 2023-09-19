@@ -71,9 +71,27 @@ $(document).ready(function () {
     });
   }
 
-  if ($(".video-for-slider").length > 0) {
-    $(".video-for-slider").trigger("pause");
+  if ($(".video-block").length > 0) {
+    $(".video-block video").trigger("pause");
     setVideoMain();
+  }
+
+  if ($(".btn-play").length > 0) {
+    $(".btn-play").on("click", function () {
+      let btn = $(this);
+
+      btn
+        .addClass("active")
+        .closest(".video")
+        .find("video")
+        .attr("controls", "true")
+        .trigger("play");
+
+      // чтобы постер не прыгал после клика на play
+      setTimeout(function () {
+        btn.closest(".video").addClass("video--play");
+      }, 100);
+    });
   }
 
   if ($(".slider-simple").length > 0) {
@@ -177,15 +195,52 @@ $(document).ready(function () {
   }
 });
 
-$(window).on("resize", function () {});
+// $(window).on("resize", function () {});
+
+$(window).on("load", function () {
+  if ($(".map").length > 0) {
+    setTimeout(() => ymapsLoad(), 500);
+    setTimeout(() => ymaps.ready(init), 1000);
+  }
+
+  function ymapsLoad() {
+    var script = document.createElement("script");
+    script.src =
+      "https://api-maps.yandex.ru/2.1/?apikey=0cec76e1-1847-46ed-a96a-c84c0917f2ad&lang=ru_RU";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  function init() {
+    var myMap = new ymaps.Map("map", {
+      center: [55.75249, 37.623205],
+      zoom: 10,
+      controls: false,
+    });
+
+    myMap.controls.remove("searchControl");
+
+    var myPlacemark = new ymaps.Placemark(
+      [55.886521, 37.4368],
+      {},
+      {
+        iconLayout: "default#image",
+        iconImageHref: "../../img/svg/location.svg",
+        iconImageSize: [80, 80],
+        iconImageOffset: [-40, -40],
+      }
+    );
+
+    myMap.geoObjects.add(myPlacemark);
+  }
+});
 
 function setVideoMain() {
   if ($(window).width() < 768) {
-    $(".video-for-slider").map(function () {
+    $(".video-block video").map(function () {
       setVideo($(this), "mobile");
     });
   } else {
-    $(".video-for-slider").map(function () {
+    $(".video-block video").map(function () {
       setVideo($(this), "desktop");
     });
   }
@@ -195,7 +250,7 @@ function setVideo(video, device) {
   video.trigger("pause");
   video.find("source");
   video.attr("src", video.attr(`data-${device}`));
-  video.trigger("load").trigger("play");
+  video.trigger("load");
 }
 
 function openModal(modal) {

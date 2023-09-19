@@ -1,4 +1,9 @@
 @media (max-width: 1279px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
   h1 {
     font-size: 32px;
     line-height: 44px;
@@ -58,5 +63,147 @@
 
   .section-controls {
     margin-top: 20px;
+  }
+
+  .catalog-item__content {
+    font-size: 16px;
+  }
+
+  .catalog-list {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+  }
+
+  .catalog-item {
+    min-height: 130px;
+
+    .btn {
+      display: none;
+    }
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+
+  .caption {
+    & + .caption {
+      margin-top: 10px;
+    }
+  }
+
+  .video-section {
+    .video-block {
+      margin-top: 20px;
+    }
+  }
+
+  .video-block {
+    .video {
+      padding-top: calc(320 / 1024 * 100%);
+      video {
+        object-position: center calc(50% - 80px);
+      }
+    }
+  }
+
+  .btn-play {
+    padding: 10px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .collections-section {
+    .catalog-item {
+      padding-top: calc(130 / 317 * 100%);
+    }
+  }
+
+  .header-phone-call {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about-main {
+    min-height: 320px;
+  }
+
+  .about-main__content {
+    padding: 20px;
+    gap: 20px;
+    max-width: 620px;
+  }
+
+  .leave-email__left {
+    gap: 10px;
+    padding-left: 44px;
+  }
+
+  .leave-email__right {
+    width: calc(50% - 15px);
+  }
+
+  .leave-email__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .leave-input input {
+    font-size: 16px;
+    line-height: 22px;
+    height: 52px;
+  }
+
+  .map-section {
+    height: 500px;
+  }
+
+  .contacts-map__block span,
+  .contacts-map__block a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts-map__block {
+    ul {
+      li {
+        gap: 16px;
+
+        & + li {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  .contacts-map__block {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .contacts-map__list {
+    max-width: 477px;
+    left: 20px;
+  }
+
+  .subscribe-social {
+    font-size: 18px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .footer {
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .footer .logo {
+    width: 100px;
   }
 }

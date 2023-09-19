@@ -1,0 +1,19 @@
+@media (max-width: 1499px) {
+  .catalog-item__content {
+    padding: 20px;
+  }
+
+  .catalog-item .btn {
+    padding: 10px 15px;
+  }
+
+  .collections-section {
+    .catalog-item {
+      min-height: inherit;
+    }
+  }
+
+  .leave-email__right {
+    width: calc(50% - 105px);
+  }
+}

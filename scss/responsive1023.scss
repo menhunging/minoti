@@ -9,6 +9,11 @@
 }
 
 @media (max-width: 1023px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   h1 {
     font-size: 24px;
     line-height: 33px;
@@ -127,5 +132,105 @@
 
   .grettings__content {
     padding: 20px 15px;
+  }
+
+  .catalog-item__content {
+    font-size: 16px;
+  }
+
+  .catalog-item {
+    min-height: 96px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .menu-close {
+    display: block;
+  }
+
+  .video-block {
+    .video {
+      padding-top: calc(240 / 768 * 100%);
+    }
+  }
+
+  .collections-section {
+    .catalog-item {
+      padding-top: calc(96 / 236 * 100%);
+    }
+
+    .catalog-item__content {
+      font-size: 14px;
+    }
+  }
+
+  .header-phone-call {
+    display: none;
+  }
+
+  .header-phone {
+    padding-left: 0;
+
+    svg {
+      position: relative;
+      @include transform(translateY(0));
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .about-main {
+    min-height: 240px;
+  }
+
+  .about-main__content {
+    padding: 15px;
+  }
+
+  .leave-email {
+    gap: 20px;
+  }
+
+  .leave-email__right {
+    width: 100%;
+  }
+
+  .leave-email__left {
+    max-width: 100%;
+  }
+
+  .leave-input input {
+    height: 48px;
+  }
+
+  .contacts-map__block span,
+  .contacts-map__block a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .contacts-map__list {
+    max-width: 354px;
+    left: 15px;
+  }
+
+  .map-section {
+    height: 375px;
+  }
+
+  .subscribe-social {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .footer {
+    font-size: 12px;
+    line-height: 16px;
+
+    .logo {
+      width: 80px;
+    }
   }
 }

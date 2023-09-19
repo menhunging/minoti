@@ -1,6 +1,6 @@
 .btn {
   -webkit-appearance: none;
-  @include border-radius(20px);
+  @include border-radius(10px);
   @include transition(all 0.3s);
   position: relative;
   color: $colorSimple;
@@ -52,6 +52,17 @@
     }
 
     &:hover {
+      background-color: $colorWhite;
+      color: $colorSimple;
+    }
+  }
+
+  &--gray {
+    background-color: $colorSimple;
+    border-color: $colorSimple;
+    color: $colorWhite;
+
+    &:hover{
       background-color: $colorWhite;
       color: $colorSimple;
     }

@@ -97,3 +97,30 @@ a.header-col {
   top: 18px;
   cursor: pointer;
 }
+
+.header-phone {
+  flex-direction: column;
+  position: relative;
+  padding-left: 35px;
+  gap: 0;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    @include transform(translateY(-50%));
+  }
+}
+
+.header-phone-call {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: underline;
+  margin-left: auto;
+  @include transition(text-decoration 0.3s);
+
+  &:hover {
+    text-decoration-color: transparent;
+  }
+}
