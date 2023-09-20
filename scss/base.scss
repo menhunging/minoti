@@ -500,6 +500,7 @@ picture {
 
 .swiper-pagination {
   z-index: 5;
+  margin-top: 30px;
 }
 
 .swiper-pagination-bullets {
@@ -510,15 +511,16 @@ picture {
   position: relative;
   display: flex;
   justify-content: center;
-  gap: 0;
+  gap: 16px;
 
   .swiper-pagination-bullet {
-    width: 25px;
-    height: 1px;
-    background-color: #d8d8d8;
+    width: 10px;
+    height: 10px;
+    background-color: $colorWhite;
+    border:solid 1px $colorSimple;
     opacity: 1;
     margin: 0 !important;
-    @include border-radius(0);
+    @include border-radius(50%);
   }
 
   .swiper-pagination-bullet-active {
@@ -529,8 +531,7 @@ picture {
 .swiper-controls {
   display: flex;
   align-items: center;
-  gap: 22px;
-  position: absolute;
+  gap: 20px;
 
   .swiper-button-prev,
   .swiper-button-next {
@@ -621,5 +622,42 @@ section {
 }
 
 .index-page {
+}
+
+.inner-page {
+  .main,
+  main {
+    padding-top: 113px;
+  }
+}
+
+.js-select {
+  cursor: pointer;
+  color: $colorSimple;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+
+  &.opened {
+    .select-sort__arrow {
+      @include transform(scale(1, -1));
+    }
+  }
+}
+
+.js-select-show {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  background-color: $colorWhite;
+  @include border-radius(10px);
+  border: solid 1px $colorSimple;
+  padding: 25px;
 }
 

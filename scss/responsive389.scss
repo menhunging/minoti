@@ -6,9 +6,17 @@
     grid-template-columns: 1fr;
   }
 
-  .subscribe-section{
+  .subscribe-section {
     flex-direction: column;
     align-items: center;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .swiper-pagination-bullets {
+    gap: 8px;
   }
 }
 

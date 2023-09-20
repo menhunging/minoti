@@ -35,32 +35,6 @@ $(document).ready(function () {
     $(".thisYear").text(date.getFullYear());
   }
 
-  if ($(".grettings-slider").length > 0) {
-    const grettingsSlider = new Swiper(".grettings-slider", {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      speed: 500,
-      loop: true,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: ["-20%", 0, -1],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  }
-
   if ($("select").length > 0) {
     $("select").map(function () {
       $(this).selectric({
@@ -94,22 +68,24 @@ $(document).ready(function () {
     });
   }
 
-  if ($(".slider-simple").length > 0) {
-    const sliders = document.querySelectorAll(".slider-simple");
+  if ($(".slider-other__slider").length > 0) {
+    const sliders = document.querySelectorAll(".slider-other__slider");
     let mySwipers = [];
 
     function sliderinit() {
       sliders.forEach((slider, index) => {
         if (!slider.swiper) {
           mySwipers[index] = new Swiper(slider, {
-            slidesPerView: 5,
-            spaceBetween: 40,
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+            spaceBetween: 20,
             navigation: {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             },
             pagination: {
               el: ".swiper-pagination",
+              clickable: true,
             },
             on: {
               init: function (swiper) {},
@@ -118,20 +94,35 @@ $(document).ready(function () {
             breakpoints: {
               0: {
                 slidesPerView: 1,
+                slidesPerGroup: 1,
               },
               480: {
                 slidesPerView: 2,
+                slidesPerGroup: 2,
                 spaceBetween: 16,
               },
-              1024: {
+              768: {
                 slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 16,
               },
               1280: {
                 slidesPerView: 4,
-                spaceBetween: 20,
+                slidesPerGroup: 4,
+                spaceBetween: 16,
+              },
+              1400: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                spaceBetween: 16,
               },
               1600: {
-                slidesPerView: 4,
+                slidesPerView: 5,
+                slidesPerGroup: 5,
+              },
+              1921: {
+                slidesPerView: 6,
+                slidesPerGroup: 6,
               },
             },
           });
@@ -191,6 +182,37 @@ $(document).ready(function () {
 
     $("[data-modal]").map(function () {
       $(this).click((e) => e.preventDefault());
+    });
+  }
+
+  if ($(".js-select").length > 0) {
+    $(".js-select").on("click", function () {
+      let than = $(this);
+      let block = than.find(".js-select-show");
+
+      than.toggleClass("opened");
+      block.stop().slideToggle();
+
+      block.find("a").on("click", function (event) {
+        event.preventDefault();
+        than.find(".js-select-text").text($(this).text());
+        close();
+      });
+
+      $(document).mouseup(function (e) {
+        if (
+          !block.is(e.target) &&
+          block.has(e.target).length === 0 &&
+          !than.is(e.target)
+        ) {
+          close();
+        }
+      });
+
+      function close() {
+        than.removeClass("opened");
+        block.stop().slideUp();
+      }
     });
   }
 });

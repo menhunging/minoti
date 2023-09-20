@@ -104,10 +104,16 @@
 
       .header-phone {
         display: flex;
+        flex-direction: row;
+        gap: 10px;
 
         &__text {
           display: block;
         }
+      }
+
+      .header-phone-call {
+        display: none;
       }
 
       .header-adress {
@@ -181,11 +187,11 @@
     }
   }
 
-  .about-main {
+  .about-block {
     min-height: 240px;
   }
 
-  .about-main__content {
+  .about-block__content {
     padding: 15px;
   }
 
@@ -232,5 +238,49 @@
     .logo {
       width: 80px;
     }
+  }
+
+  .inner-page {
+    .main,
+    main {
+      padding-top: 48px;
+    }
+  }
+
+  .breadcrumbs-item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .js-select {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .filter-settings li {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .product-item__tags {
+    font-size: 14px;
+    max-width: 50%;
+  }
+
+  .tags-section {
+    gap: 10px;
+
+    a {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .text-simple .picture {
+    width: calc(50% - 10px);
+  }
+
+  .slider-other .swiper-controls {
+    top: -44px;
   }
 }
