@@ -135,6 +135,55 @@ $(document).ready(function () {
     sliders.length && sliderinit();
   }
 
+  if ($(".slider-pictures__slider").length > 0) {
+    const sliders = document.querySelectorAll(".slider-pictures__slider");
+    let mySwipers = [];
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 20,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            on: {
+              init: function (swiper) {},
+              slideChange: function (swiper) {},
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+              },
+              480: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 16,
+              },
+              768: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 16,
+              },
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
+  }
+
   if ($(".phone-input").length > 0) {
     $(".phone-input").map(function () {
       $(this).inputmask({
@@ -190,8 +239,12 @@ $(document).ready(function () {
       let than = $(this);
       let block = than.find(".js-select-show");
 
-      than.toggleClass("opened");
-      block.stop().slideToggle();
+      if (than.hasClass("opened")) {
+        close();
+      } else {
+        than.addClass("opened");
+        block.stop().slideDown();
+      }
 
       block.find("a").on("click", function (event) {
         event.preventDefault();
@@ -215,9 +268,32 @@ $(document).ready(function () {
       }
     });
   }
-});
 
-// $(window).on("resize", function () {});
+  if ($(".header-search").length > 0) {
+    let search = $(".search-invis");
+    let btnSearch = $(".header-search");
+    let overlay = $(".search-overlay");
+    let btnClose = $(".btn-close-search");
+
+    btnSearch.on("click", function () {
+      search.addClass("opened");
+      overlay.addClass("search-overlay--opened");
+    });
+
+    overlay.on("click", function () {
+      close();
+    });
+
+    btnClose.on("click", function () {
+      close();
+    });
+
+    function close() {
+      search.removeClass("opened");
+      overlay.removeClass("search-overlay--opened");
+    }
+  }
+});
 
 $(window).on("load", function () {
   if ($(".map").length > 0) {

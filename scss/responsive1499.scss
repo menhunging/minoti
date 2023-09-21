@@ -20,4 +20,14 @@
   .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .catalog-products {
+    grid-template-columns: calc(20% + 45px) 1fr;
+  }
+
+  .result-search {
+    .product-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }

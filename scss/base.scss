@@ -78,7 +78,7 @@ input {
     font-size: 16px;
     line-height: 24px;
     color: $colorBlack;
-    @include border-radius(16px);
+    @include border-radius(10px);
     padding: 0 24px;
 
     &::placeholder {
@@ -157,22 +157,12 @@ input {
     top: 50%;
     margin-top: -6px;
   }
-
-  & + .input-item {
-    margin-top: 24px;
-  }
-
-  &.input-social {
-    input {
-      padding-left: 39px;
-    }
-  }
 }
 
 .check-block {
   display: flex;
   align-items: center;
-  min-height: 36px;
+  min-height: 25px;
 
   input {
     display: none;
@@ -181,8 +171,13 @@ input {
       & + label {
         color: $colorBlack;
 
-        &::after {
+        &::before {
           background-color: $colorBlack;
+          border-color: $colorBlack;
+        }
+
+        &::after {
+          opacity: 1;
         }
       }
     }
@@ -192,33 +187,32 @@ input {
     cursor: pointer;
     padding-left: 38px;
     position: relative;
+    color: $colorSimple;
+    font-size: 16px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #80726a;
-    display: block;
-    text-align: left;
+    line-height: 19px;
     @include transition(color 0.3s);
 
     @include before {
       left: 0;
       top: 50%;
-      width: 25px;
-      height: 25px;
-      margin-top: -12.5px;
-      border: solid 1px #80726a;
-      @include border-radius(50%);
+      width: 24px;
+      height: 24px;
+      @include transform(translateY(-50%));
+      border: solid 1px rgba(153, 153, 153, 1);
+      @include border-radius(3px);
     }
 
     @include after {
       top: 50%;
-      left: 8px;
+      left: 0;
       top: 50%;
-      width: 9.29px;
-      height: 9.29px;
-      margin-top: -4px;
-      background-color: #80726a;
-      @include border-radius(50%);
+      width: 24px;
+      height: 24px;
+      @include transform(translateY(-50%));
+      background-image: url(../img/svg/check.svg);
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
@@ -229,6 +223,10 @@ input {
     &:hover {
       text-decoration-color: transparent;
     }
+  }
+
+  & + .check-block {
+    margin-top: 16px;
   }
 }
 
@@ -343,7 +341,7 @@ input {
   height: 100%;
   top: 0;
   left: 0;
-  color: #292929;
+  color: $colorSimple;
 }
 
 .modal.is-open {
@@ -358,7 +356,7 @@ input {
   padding: 0;
   margin: 0;
   width: 100%;
-  max-width: 100%;
+  max-width: 665px;
   padding: 50px 0;
 }
 
@@ -421,17 +419,55 @@ input {
 }
 
 .modal__inner {
-  background-color: #fbf9f8;
+  background-color: $colorWhite;
   margin: 0 auto;
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  padding: 30px;
+  @include border-radius(10px);
+  text-align: center;
 }
 
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: inherit;
+}
+
+.modal-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 40px;
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .btn {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .text {
+    color: #333;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-top: -20px;
+
+    a {
+      font-weight: 500;
+      text-decoration: underline;
+      @include transition(text-decoration 0.3s);
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
 }
 
 .selectric-open {
@@ -453,35 +489,6 @@ div {
 
   scrollbar-color: rgba(255, 255, 255, 0.33) transparent;
   scrollbar-width: thin;
-}
-
-@media (min-width: 1200px) {
-  _:-webkit-any-link,
-  :root .modal-open {
-    padding-right: 17px;
-
-    .header {
-      width: calc(100% - 17px);
-    }
-  }
-
-  _:-webkit-any-link,
-  :root .hidden {
-    padding-right: 17px;
-
-    .header {
-      width: calc(100% - 17px);
-    }
-  }
-
-  _:-webkit-any-link,
-  :root body.compensate-for-scrollbar {
-    padding-right: 17px;
-
-    .header {
-      width: calc(100% - 17px);
-    }
-  }
 }
 
 picture {
@@ -517,7 +524,7 @@ picture {
     width: 10px;
     height: 10px;
     background-color: $colorWhite;
-    border:solid 1px $colorSimple;
+    border: solid 1px $colorSimple;
     opacity: 1;
     margin: 0 !important;
     @include border-radius(50%);
@@ -555,6 +562,22 @@ picture {
   &:after {
     display: none;
   }
+}
+
+.swiper-pagination-fraction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: 0;
+  position: relative;
+  top: auto;
+  bottom: auto;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  min-width: 27px;
 }
 
 .burger {
@@ -599,6 +622,8 @@ input[type="number"]:focus {
   -moz-appearance: textfield;
 }
 
+.search-overlay,
+.filter-overlay,
 .menu-overlay {
   opacity: 0;
   pointer-events: none;
@@ -661,3 +686,14 @@ section {
   padding: 25px;
 }
 
+@media (min-width: 1200px) {
+  _:-webkit-any-link,
+  :root .modal-open {
+    padding-right: 17px;
+  }
+
+  _:-webkit-any-link,
+  :root body.compensate-for-scrollbar {
+    padding-right: 17px;
+  }
+}

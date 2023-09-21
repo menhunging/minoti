@@ -18,6 +18,14 @@
   text-transform: uppercase;
   border: solid 1px $colorSimple;
 
+  svg {
+    @include transition(all 0.3s);
+
+    path {
+      @include transition(all 0.3s);
+    }
+  }
+
   &:hover {
     background-color: $colorSimple;
     color: $colorWhite;
@@ -62,9 +70,29 @@
     border-color: $colorSimple;
     color: $colorWhite;
 
-    &:hover{
+    &::after {
+      background-image: url(../img/svg/arrow-left-white.svg);
+    }
+
+    &::before {
+      background-image: url(../img/svg/arrow-left-black.svg);
+    }
+
+    &:hover {
       background-color: $colorWhite;
       color: $colorSimple;
+    }
+  }
+
+  &--clear {
+    gap: 10px;
+
+    &:hover {
+      svg {
+        path {
+          fill: $colorWhite;
+        }
+      }
     }
   }
 }

@@ -1,3 +1,9 @@
+@media (min-width: 1279px) {
+  .filter-overlay {
+    display: none !important;
+  }
+}
+
 @media (max-width: 1279px) {
   body {
     font-size: 16px;
@@ -229,7 +235,11 @@
   }
 
   .catalog-products__left {
-    display: none;
+    position: fixed;
+    left: -352px;
+    top: 0;
+    width: 352px;
+    z-index: 10;
   }
 
   .catalog-products {
@@ -310,11 +320,104 @@
     margin-top: 20px;
   }
 
-  .slider-other .swiper-controls {
+  .swiper-pagination-fraction {
+    margin-top: 0;
+  }
+
+  .slider-simple .swiper-controls {
     top: -48px;
   }
 
   .slider-other .slider-other__slider {
     margin-top: 20px;
+  }
+
+  .filter-block {
+    background-color: $colorWhite;
+    position: relative;
+    top: 0;
+    @include transition(all 0.3s);
+    z-index: 10;
+    max-height: 100vh;
+    overflow: auto;
+    @include border-radius(0);
+
+    &.show {
+      @include transform(translateX(100%));
+    }
+  }
+
+  .filter-controls-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    order: -1;
+    border-bottom: solid 1px rgba(218, 218, 218, 1);
+  }
+
+  .check-block label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .filter-row .caption {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .product-small-slider .picture:not(.picture-hover) {
+    padding-top: calc(110 / 152 * 100%);
+  }
+
+  .product-settings__title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .error {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .result-search__head {
+    font-size: 18px;
+  }
+
+  .result-search {
+    .product-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .search-invis .result-search__head input {
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .result-search__body {
+    max-height: 70vh;
+    overflow: auto;
+  }
+
+  .modal-custom {
+    gap: 20px;
+    padding-top: 20px;
+
+    .input-form {
+      gap: 20px;
+    }
+
+    .text {
+      margin-top: -10px;
+    }
+  }
+
+  .modals-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .modal__container {
+    max-width: 593px;
   }
 }
