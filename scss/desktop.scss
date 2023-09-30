@@ -1300,17 +1300,18 @@
 
 .search-invis {
   position: fixed;
-  top: -100%;
+  transform: translateY(-100%);
   left: 0;
+  top: 0;
   width: 100%;
   z-index: 10;
   background-color: $colorWhite;
   pointer-events: none;
-  @include transition(all 0.3s);
+  @include transition(transform 0.3s);
 
   &.opened {
     pointer-events: all;
-    top: 0;
+    transform: translateY(0);
   }
 
   .result-search__head {
