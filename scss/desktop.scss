@@ -228,6 +228,7 @@
   min-height: 600px;
   padding: 0;
   color: $colorWhite;
+  margin-top: 40px;
 
   .picture {
     position: absolute;
@@ -1189,6 +1190,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
+
+  .price-block {
+    gap: 20px;
+
+    .price {
+      margin: 0;
+    }
+  }
 }
 
 .product-section__left {
@@ -1308,6 +1317,8 @@
   background-color: $colorWhite;
   pointer-events: none;
   @include transition(transform 0.3s);
+  max-height: 100vh;
+  overflow: auto;
 
   &.opened {
     pointer-events: all;
@@ -1338,6 +1349,7 @@
   right: 0;
   top: 50%;
   @include transform(translateY(-50%));
+  display: inline-flex;
 
   svg {
     pointer-events: none;
@@ -1351,4 +1363,28 @@
 .modal-link {
   max-width: 279px;
   margin: 0 auto;
+}
+
+.price-block {
+  color: $colorSimple;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  .price {
+    margin-left: auto;
+  }
+
+  .price-old {
+    color: $colorSimple;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: line-through;
+  }
 }

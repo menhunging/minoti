@@ -562,6 +562,10 @@ picture {
   &:after {
     display: none;
   }
+
+  &.swiper-button-disabled {
+    opacity: 0.33 !important;
+  }
 }
 
 .swiper-pagination-fraction {

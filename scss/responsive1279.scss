@@ -146,6 +146,7 @@
   .leave-email__left {
     gap: 10px;
     padding-left: 44px;
+    max-width: 40%;
   }
 
   .leave-email__right {
@@ -419,5 +420,15 @@
 
   .modal__container {
     max-width: 593px;
+  }
+
+  .price-block {
+    font-size: 16px;
+    line-height: 22px;
+
+    .price-old {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }

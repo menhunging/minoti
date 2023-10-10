@@ -308,6 +308,13 @@
     padding-top: calc(66 / 90 * 100%);
   }
 
+  .product-section {
+    .price-block {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
   .product-section__right {
     gap: 16px;
   }
@@ -369,5 +376,15 @@
 
   .modal-custom .text {
     text-align: left;
+  }
+
+  .price-block {
+    font-size: 18px;
+    line-height: 24px;
+
+    .price-old {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 }

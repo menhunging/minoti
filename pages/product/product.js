@@ -22,7 +22,7 @@ $(document).ready(function () {
           slidesPerView: 4,
           spaceBetween: 20,
         },
-        1500: {
+        1600: {
           slidesPerView: 5,
           spaceBetween: 20,
         },
