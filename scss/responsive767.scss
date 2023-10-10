@@ -387,4 +387,12 @@
       line-height: 22px;
     }
   }
+
+  .catalog {
+    &.collections-section {
+      .catalog-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
 }

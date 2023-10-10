@@ -22,6 +22,14 @@
   .swiper-pagination-bullets {
     gap: 8px;
   }
+
+  .catalog {
+    &.collections-section {
+      .catalog-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }
 
 @media (max-width: 389px) {

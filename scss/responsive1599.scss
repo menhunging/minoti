@@ -259,4 +259,8 @@
       padding-top: calc(375 / 710 * 100%);
     }
   }
+
+  .catalog.collections-section .catalog-item {
+    min-height: 137px;
+  }
 }

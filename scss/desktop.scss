@@ -1388,3 +1388,21 @@
     text-decoration: line-through;
   }
 }
+
+.catalog {
+  padding-bottom: 60px;
+
+  .title-page {
+    padding: 0;
+  }
+
+  &.collections-section {
+    .catalog-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .catalog-item {
+      min-height: 232px;
+    }
+  }
+}

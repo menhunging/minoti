@@ -363,4 +363,12 @@
   .modal-custom {
     padding-top: 40px;
   }
+
+  .catalog {
+    &.collections-section {
+      .catalog-item {
+        min-height: 121px;
+      }
+    }
+  }
 }
