@@ -371,4 +371,53 @@
       }
     }
   }
+
+  .grid-list {
+    grid-auto-rows: 300px;
+  }
+
+  .grid-list--2 {
+    grid-auto-rows: 195px;
+  }
+
+  .histroy-company__list {
+    gap: 20px;
+  }
+
+  .histroy-company__date {
+    font-size: 18px;
+  }
+
+  .contacts-map__block {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .contacts-map__block ul li {
+    gap: 10px;
+  }
+
+  .contacts-map__block ul li + li {
+    margin-top: 10px;
+  }
+
+  .form-call__right {
+    width: 100%;
+
+    order: -1;
+
+    .picture {
+      height: auto;
+
+      img {
+        height: auto;
+        position: relative;
+        min-height: 162px;
+      }
+    }
+  }
+  .form-call__left {
+    width: 100%;
+    padding: 15px;
+  }
 }

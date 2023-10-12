@@ -445,4 +445,17 @@
       }
     }
   }
+
+  .section-picture__pictures {
+    padding: 30px 20px 60px;
+  }
+
+  .grid-list {
+    grid-auto-rows: 400px;
+    gap: 20px;
+  }
+
+  .grid-list--2 {
+    grid-auto-rows: 262px;
+  }
 }

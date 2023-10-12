@@ -129,10 +129,6 @@
     max-width: 30%;
   }
 
-  .map-section {
-    height: 450px;
-  }
-
   .footer {
     font-size: 14px;
     line-height: 20px;
@@ -262,5 +258,70 @@
 
   .catalog.collections-section .catalog-item {
     min-height: 137px;
+  }
+
+  .grid-picture {
+    gap: 20px;
+  }
+
+  .grid-picture__slider {
+    gap: 20px;
+  }
+
+  .grid-list {
+    grid-auto-rows: 560px;
+    gap: 20px;
+  }
+
+  .grid-list--2 {
+    grid-auto-rows: 360px;
+  }
+
+  .slider-pictures {
+    padding-top: 50px;
+  }
+
+  .section-picture__pictures .picture {
+    padding-top: calc(195 / 750 * 100%);
+  }
+
+  .histroy-company__list {
+    gap: 15px;
+  }
+
+  .histroy-company__item {
+    gap: 16px;
+  }
+
+  .histroy-company__date {
+    font-size: 24px;
+  }
+
+  .form-call {
+    .input-form {
+      margin-top: 20px;
+      gap: 20px;
+    }
+  }
+
+  .form-call__left {
+    padding: 30px 35px;
+  }
+
+  .contacts-map__block {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .contacts-map__block ul li {
+    gap: 10px;
+  }
+
+  .map-section {
+    height: 500px;
+  }
+
+  .form-call .text{
+    margin-top: -10px;
   }
 }

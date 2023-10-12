@@ -1,3 +1,5 @@
+let observer = () => {};
+
 $(document).ready(function () {
   if ($(".burger").length > 0) {
     let menu = $(".menu");
@@ -293,6 +295,20 @@ $(document).ready(function () {
       overlay.removeClass("search-overlay--opened");
     }
   }
+
+  if ($(".text-simple").length > 0) {
+    $(".text-simple").map(function () {
+      if ($(this).find("picture").length > 0) {
+        $(this).addClass("text-simple-picture");
+      }
+    });
+  }
+
+  if ($(".grid-picture__slider").length > 0) {
+    if ($(window).width() < 768) {
+      initMobileSliderPicture();
+    }
+  }
 });
 
 $(window).on("load", function () {
@@ -332,6 +348,16 @@ $(window).on("load", function () {
   }
 });
 
+$(window).resize(function () {
+  if ($(".grid-picture__slider").length > 0) {
+    if ($(window).width() < 768) {
+      initMobileSliderPicture();
+    } else {
+      observer();
+    }
+  }
+});
+
 function setVideoMain() {
   if ($(window).width() < 768) {
     $(".video-block video").map(function () {
@@ -364,4 +390,52 @@ function closeModal(modal) {
   setTimeout(() => {
     $("body").removeClass("modal-open");
   }, 300);
+}
+
+function initMobileSliderPicture() {
+  if ($(".grid-picture__slider").hasClass("init-mobile-slider")) return false;
+
+  $(".grid-picture__slider").addClass("init-mobile-slider");
+
+  $(".grid-picture__slider .swiper-slide").unwrap(".grid-list");
+
+  $(".grid-picture__slider .swiper-slide").wrapAll(
+    "<div class='swiper-wrapper'></div>"
+  );
+
+  const swiper = new Swiper(".grid-picture__slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoHeight: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  let destroy = () => {
+    if ($(".grid-picture__slider").hasClass("init-mobile-slider")) {
+      $(".grid-picture__slider").removeClass("init-mobile-slider");
+      $(".grid-picture__slider .swiper-slide").unwrap(".swiper-wrapper");
+
+      const divs = $(".grid-picture__slider .swiper-slide");
+      for (let i = 0; i < divs.length; i += 2) {
+        if (i < 2) {
+          divs
+            .slice(i, i + 2)
+            .wrapAll("<div class='grid-list grid-list--2'></div>");
+        } else {
+          divs.slice(i, i + 2).wrapAll("<div class='grid-list'></div>");
+        }
+      }
+
+      swiper.destroy(true, true);
+    }
+  };
+
+  observer = destroy;
 }

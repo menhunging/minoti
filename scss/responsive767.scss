@@ -215,9 +215,11 @@
 
   .text-simple {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 15px;
 
-    &:has(.picture) {
+    &.text-simple-picture {
       .text-simple__content {
         width: 100%;
       }
@@ -394,5 +396,92 @@
         grid-template-columns: 1fr 1fr;
       }
     }
+  }
+
+  .section-picture__pictures {
+    flex-direction: column;
+    padding: 30px 15px 60px;
+
+    .picture {
+      padding-top: calc(160 / 290 * 100%);
+    }
+  }
+
+  .section-picture {
+    .picture img {
+      min-height: 160px;
+    }
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .grid-list .picture.wide {
+    grid-column: 1/2;
+  }
+
+  .histroy-company__list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    border-top: 0;
+    border-left: solid 1px #ddd;
+  }
+
+  .histroy-company__item {
+    padding-top: 0;
+    padding-left: 35px;
+    gap: 10px;
+
+    &::before {
+      left: -5px;
+      top: 3px;
+    }
+  }
+
+  .grid-picture {
+    overflow: hidden;
+  }
+
+  .histroy-company__date {
+    font-size: 16px;
+  }
+
+  .grid-picture__slider {
+    position: relative;
+
+    img {
+      height: auto;
+      position: relative;
+    }
+
+    .swiper-controls {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: -30px;
+    }
+
+    .swiper-pagination {
+      display: flex;
+    }
+  }
+
+  .form-call .input-form textarea {
+    height: 120px;
+  }
+
+  .form-call .input-form input {
+    height: 40px;
+  }
+
+  .form-call .btn {
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

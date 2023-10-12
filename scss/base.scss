@@ -97,6 +97,8 @@ input {
 
   textarea {
     @extend %stylesInput;
+    height: 143px;
+    padding: 16px 20px;
   }
 
   input {

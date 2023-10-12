@@ -838,7 +838,7 @@
 }
 
 .text-simple {
-  &:has(.picture) {
+  &.text-simple-picture {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -887,6 +887,10 @@
         left: 8px;
       }
     }
+  }
+
+  &--right {
+    flex-direction: row-reverse;
   }
 }
 
@@ -1404,5 +1408,193 @@
     .catalog-item {
       min-height: 232px;
     }
+  }
+}
+
+.section-picture {
+  width: 100%;
+  padding: 0;
+
+  .picture {
+    width: 100%;
+    height: 100%;
+    @include invisLink;
+    position: relative;
+
+    img {
+      height: auto;
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+
+.section-picture__pictures {
+  display: flex;
+  gap: 20px;
+  padding: 30px 35px 60px;
+
+  .picture {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-top: calc(205 / 750 * 100%);
+
+    img {
+      position: absolute;
+      height: 100%;
+    }
+  }
+}
+
+.grid-picture {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.grid-picture__slider {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .swiper-controls {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 700px;
+  gap: 30px;
+
+  .picture {
+    border-radius: 10px;
+    overflow: hidden;
+    @include invisLink;
+
+    img {
+      position: relative;
+    }
+
+    &.wide {
+      grid-column: span 2;
+    }
+
+    &.tall {
+      grid-row: span 2;
+    }
+  }
+}
+
+.grid-list--2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 500px;
+}
+
+.histroy-company {
+}
+
+.histroy-company__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  border-top: solid 1px #ddd;
+}
+
+.histroy-company__item {
+  position: relative;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include before {
+    width: 10px;
+    height: 10px;
+    background-color: $colorSimple;
+    left: 0;
+    top: -5px;
+    border-radius: 50%;
+  }
+}
+
+.histroy-company__date {
+  color: $colorSimple;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.form-call {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0;
+
+  .btn {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  a:not(.btn) {
+    text-decoration: underline;
+    transition: text-decoration 0.3s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  .text {
+    display: block;
+    color: #333;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-top: -20px;
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+
+    .input-item {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .picture {
+  }
+}
+
+.form-call__left {
+  width: 50%;
+  background-color: #fafafa;
+  padding: 35px;
+
+  .caption {
+    margin-bottom: 20px;
+  }
+}
+
+.form-call__right {
+  position: relative;
+  width: 50%;
+
+  .picture {
+    width: 100%;
+    height: 100%;
   }
 }
