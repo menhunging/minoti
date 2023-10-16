@@ -321,7 +321,91 @@
     height: 500px;
   }
 
-  .form-call .text{
+  .form-call .text {
     margin-top: -10px;
   }
+
+  .not-found {
+    padding-top: 101px;
+    max-width: 674px;
+  }
+
+  .not-found__left {
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .not-found__right {
+    max-width: 300px;
+  }
+
+  .selection-col {
+    .price-block {
+      font-size: 18px;
+      gap: 5px;
+
+      .price-old {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .selection-col ul {
+    width: 180px;
+    font-size: 12px;
+    line-height: 16px;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  .count-block {
+    width: 85px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .count-btn {
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .input-count {
+    width: 25px;
+    font-size: 12px;
+  }
+
+  .btn-delete__text {
+    display: none;
+  }
+
+  .selection-col .picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .selection-row {
+    gap: 20px;
+  }
+
+  .selection-col:nth-child(2) {
+    max-width: 33%;
+  }
+
+  .selection-list {
+    font-size: 16px;
+    line-height: 22px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+
 }

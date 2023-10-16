@@ -79,7 +79,7 @@ input {
     line-height: 24px;
     color: $colorBlack;
     @include border-radius(10px);
-    padding: 0 24px;
+    padding: 0 20px;
 
     &::placeholder {
       opacity: 1;

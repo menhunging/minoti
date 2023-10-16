@@ -420,4 +420,36 @@
     width: 100%;
     padding: 15px;
   }
+
+  .not-found {
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .not-found__left {
+    padding: 30px 15px;
+  }
+
+  .selection-list {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .selection-col .picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .form-section {
+    .input-form {
+      input {
+        height: 40px;
+      }
+
+      textarea {
+        height: 120px;
+      }
+    }
+  }
 }

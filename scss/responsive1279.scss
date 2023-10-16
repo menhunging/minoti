@@ -458,4 +458,55 @@
   .grid-list--2 {
     grid-auto-rows: 262px;
   }
+
+  .not-found {
+    padding: 48px 15px 10px;
+  }
+
+  .selection-col ul {
+    font-size: 12px;
+    width: 130px;
+  }
+
+  .selection-row {
+    gap: 10px;
+  }
+
+  .selection-col:nth-child(2) {
+    max-width: 43%;
+    padding-left: 10px;
+  }
+
+  .selection-col:nth-child(3) {
+    padding: 0 10px;
+  }
+
+  .selection-col .price-block {
+    width: 130px;
+  }
+
+  .btn-delete {
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  .form-section {
+    .input-form {
+      .input-item:nth-child(3) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+      }
+    }
+  }
+
+  .form-section__controls {
+    margin-top: 0;
+  }
 }

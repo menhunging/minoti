@@ -309,6 +309,32 @@ $(document).ready(function () {
       initMobileSliderPicture();
     }
   }
+
+  if ($(".count-block").length > 0) {
+    $(".count-block").map(function () {
+      let plus = $(this).find(".count-plus");
+      let minus = $(this).find(".count-minus");
+      let input = $(this).find(".input-count");
+      let count = $(this).find(".input-count").val();
+
+      plus.on("click", function (e) {
+        e.preventDefault();
+        count++;
+        input.val(count);
+      });
+
+      minus.on("click", function (e) {
+        e.preventDefault();
+        count--;
+
+        if (count < 0) {
+          count = 0;
+        }
+
+        input.val(count);
+      });
+    });
+  }
 });
 
 $(window).on("load", function () {

@@ -295,7 +295,7 @@ input {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
-  padding: 0 24px;
+  padding: 0 20px;
 }
 .input-item .btn-telegram::placeholder, .input-item input::placeholder, .input-item textarea::placeholder {
   opacity: 1;
@@ -2921,6 +2921,201 @@ a.header-col:hover {
   height: 100%;
 }
 
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex: 1;
+  width: 100%;
+  padding: 113px 0 10px;
+}
+.not-found__left {
+  max-width: 349px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 35px;
+}
+
+.not-found__right {
+  width: 50%;
+  position: relative;
+}
+.not-found__right .picture img {
+  height: auto;
+  position: relative;
+}
+
+.selection-section {
+  padding-top: 0;
+}
+
+.selection-list {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.selection-list .link {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  -webkit-transition: text-decoration 0.3s;
+  -moz-transition: text-decoration 0.3s;
+  -o-transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+}
+.selection-list .link:hover {
+  text-decoration-color: rgb(51, 51, 51);
+}
+.selection-list p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 10px;
+}
+
+.selection-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px 0;
+}
+.selection-row + .selection-row {
+  border-top: solid 1px rgb(51, 51, 51);
+}
+.selection-row:last-child {
+  border-bottom: solid 1px rgb(51, 51, 51);
+}
+
+.selection-col:nth-child(2) {
+  flex: 1;
+  max-width: 40%;
+  width: 100%;
+}
+.selection-col .picture {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selection-col .picture img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.selection-col .price-block {
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin: 0;
+  gap: 10px;
+}
+.selection-col .price-block .price {
+  margin: 0;
+}
+.selection-col ul {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  width: 360px;
+}
+.selection-col ul li {
+  width: calc(50% - 10px);
+}
+
+.selection-col__tit {
+  font-weight: 500;
+}
+
+.btn-delete {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  gap: 10px;
+}
+.count-block {
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+  width: 118px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+.count-block__body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.count-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.input-count {
+  width: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  position: relative;
+}
+
+.selection-result {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 30px;
+  font-weight: 500;
+}
+.form-section {
+  background-color: #fafafa;
+}
+.form-section .form-call {
+  padding: 0;
+}
+.form-section .input-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.form-section .input-form input {
+  height: 56px;
+}
+.form-section .input-form textarea {
+  height: 137px;
+}
+.form-section .input-form .input-item:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.form-section__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
 @media (max-width: 1599px) {
   body {
     font-size: 16px;
@@ -3168,6 +3363,69 @@ a.header-col:hover {
   }
   .form-call .text {
     margin-top: -10px;
+  }
+  .not-found {
+    padding-top: 101px;
+    max-width: 674px;
+  }
+  .not-found__left {
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  .not-found__right {
+    max-width: 300px;
+  }
+  .selection-col .price-block {
+    font-size: 18px;
+    gap: 5px;
+  }
+  .selection-col .price-block .price-old {
+    font-size: 16px;
+  }
+  .selection-col ul {
+    width: 180px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .selection-col ul li {
+    width: 100%;
+  }
+  .count-block {
+    width: 85px;
+    height: 40px;
+    padding: 10px;
+  }
+  .count-btn {
+    width: 20px;
+    height: 20px;
+  }
+  .count-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  .input-count {
+    width: 25px;
+    font-size: 12px;
+  }
+  .btn-delete__text {
+    display: none;
+  }
+  .selection-col .picture {
+    width: 120px;
+    height: 120px;
+  }
+  .selection-row {
+    gap: 20px;
+  }
+  .selection-col:nth-child(2) {
+    max-width: 33%;
+  }
+  .selection-list {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .selection-list p {
+    font-size: 12px;
   }
 }
 @media (min-width: 1279px) {
@@ -3535,6 +3793,41 @@ a.header-col:hover {
   .grid-list--2 {
     grid-auto-rows: 262px;
   }
+  .not-found {
+    padding: 48px 15px 10px;
+  }
+  .selection-col ul {
+    font-size: 12px;
+    width: 130px;
+  }
+  .selection-row {
+    gap: 10px;
+  }
+  .selection-col:nth-child(2) {
+    max-width: 43%;
+    padding-left: 10px;
+  }
+  .selection-col:nth-child(3) {
+    padding: 0 10px;
+  }
+  .selection-col .price-block {
+    width: 130px;
+  }
+  .btn-delete__icon {
+    width: 20px;
+    height: 20px;
+  }
+  .btn-delete svg {
+    width: 20px;
+    height: 20px;
+  }
+  .form-section .input-form .input-item:nth-child(3) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .form-section__controls {
+    margin-top: 0;
+  }
 }
 @media (min-width: 1024px) {
   .menu {
@@ -3863,6 +4156,28 @@ a.header-col:hover {
   .form-call__left {
     width: 100%;
     padding: 15px;
+  }
+  .not-found {
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .not-found__left {
+    padding: 30px 15px;
+  }
+  .selection-list {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .selection-col .picture {
+    width: 80px;
+    height: 80px;
+  }
+  .form-section .input-form input {
+    height: 40px;
+  }
+  .form-section .input-form textarea {
+    height: 120px;
   }
 }
 @media (max-width: 767px) {
@@ -4238,6 +4553,95 @@ a.header-col:hover {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .not-found {
+    gap: 30px;
+  }
+  .not-found__left {
+    gap: 15px;
+  }
+  .not-found__right {
+    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+  }
+  .selection-row {
+    flex-wrap: wrap;
+    gap: 12px 0;
+  }
+  .selection-col:nth-child(2) {
+    width: calc(100% - 80px);
+    padding-left: 20px;
+    max-width: 100%;
+    flex: auto;
+  }
+  .selection-col:nth-child(3) {
+    width: 100%;
+    padding: 0;
+  }
+  .selection-col:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .selection-col ul {
+    max-width: 100%;
+    width: 100%;
+  }
+  .selection-col ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/svg/toh.svg);
+    background-position: center calc(100% - 4px);
+    background-repeat: repeat-x;
+  }
+  .selection-col__tit {
+    padding-right: 10px;
+  }
+  .selection-col__data {
+    padding-left: 10px;
+  }
+  .selection-col__tit,
+  .selection-col__data {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 3;
+  }
+  .btn-delete__text {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .selection-col .price-block {
+    align-items: flex-end;
+  }
+  .selection-col .price-block .price-old {
+    font-size: 14px;
+  }
+  .count-block {
+    width: 109px;
+  }
+  .input-count {
+    width: 38px;
+  }
+  .form-section .input-form {
+    grid-template-columns: 1fr;
+  }
+  .form-section .input-form .input-item:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: initial;
+  }
+  .form-section__controls {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-section__controls .text {
+    margin-top: 0;
+  }
+  .selection-result {
+    justify-content: space-between;
   }
 }
 @media (max-width: 639px) {
