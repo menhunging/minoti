@@ -452,4 +452,17 @@
       }
     }
   }
+
+  .designer-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .designer-item__name {
+    padding: 10px;
+  }
+
+  .designer-list {
+    gap: 16px 20px;
+  }
 }

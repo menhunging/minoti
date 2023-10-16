@@ -599,4 +599,25 @@
   .selection-result {
     justify-content: space-between;
   }
+
+  .designer-page .text-simple .picture {
+    min-height: inherit;
+  }
+
+  .designer-page .text-simple .picture img {
+    position: relative;
+  }
+
+  .designer-item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .designer-item__name {
+    padding: 10px;
+  }
+
+  .designer-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }

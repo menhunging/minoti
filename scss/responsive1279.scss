@@ -329,6 +329,7 @@
     top: -48px;
   }
 
+  .slider-other .slider-other__designer,
   .slider-other .slider-other__slider {
     margin-top: 20px;
   }
@@ -496,7 +497,7 @@
       height: 20px;
     }
   }
-  
+
   .form-section {
     .input-form {
       .input-item:nth-child(3) {
@@ -508,5 +509,9 @@
 
   .form-section__controls {
     margin-top: 0;
+  }
+
+  .designer-list {
+    gap: 30px 16px;
   }
 }

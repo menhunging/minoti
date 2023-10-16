@@ -137,6 +137,51 @@ $(document).ready(function () {
     sliders.length && sliderinit();
   }
 
+  if ($(".slider-other__designer").length > 0) {
+    const sliders = document.querySelectorAll(".slider-other__designer");
+    let mySwipers = [];
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 20,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+              },
+              480: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 16,
+              },
+              768: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 16,
+              },
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
+  }
+
   if ($(".slider-pictures__slider").length > 0) {
     const sliders = document.querySelectorAll(".slider-pictures__slider");
     let mySwipers = [];
@@ -334,6 +379,43 @@ $(document).ready(function () {
         input.val(count);
       });
     });
+  }
+
+  if ($(".filter-block").length > 0) {
+    let filter = $(".filter-block");
+    let filterHead = $(".filter-block__head");
+    let btn = $(".btn-filter");
+    let overlay = $(".filter-overlay");
+    let btnClose = $(".filter-close");
+
+    filterHead.on("click", function () {
+      $(".filter-block__head").removeClass("opened");
+      $(".filter-block__body").stop().slideUp();
+
+      $(this).addClass("opened").next(".filter-block__body").stop().slideDown();
+    });
+
+    btn.on("click", function () {
+      if (filter.hasClass("show")) {
+        close();
+      } else {
+        filter.addClass("show");
+        overlay.addClass("filter-overlay--opened");
+      }
+    });
+
+    overlay.on("click", function () {
+      close();
+    });
+
+    btnClose.on("click", function () {
+      close();
+    });
+
+    function close() {
+      filter.removeClass("show");
+      overlay.removeClass("filter-overlay--opened");
+    }
   }
 });
 
