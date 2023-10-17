@@ -465,4 +465,27 @@
   .designer-list {
     gap: 16px 20px;
   }
+
+  .design-invis__item {
+    .circle {
+      width: 16px;
+      height: 16px;
+      outline: solid 4px $colorWhite;
+      outline-offset: -4px;
+    }
+
+    &.design1 {
+      left: 32%;
+      bottom: 22%;
+    }
+
+    &.design5 {
+      right: 12%;
+      top: 40%;
+    }
+  }
+
+  .sale {
+    font-size: 14px;
+  }
 }

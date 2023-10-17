@@ -417,6 +417,53 @@ $(document).ready(function () {
       overlay.removeClass("filter-overlay--opened");
     }
   }
+
+  if ($(".word-section").length > 0) {
+    let parents = $(".word-section");
+    let circle = $(".design-invis__item .circle");
+    let itemClose = $(".designer-info__close");
+
+    circle.on("click", function () {
+      if ($(this).hasClass("active")) {
+        close();
+      } else {
+        close();
+        parents.addClass("opened");
+        $(this).addClass("active");
+        $(this)
+          .parents(".design-invis__item")
+          .find(".designer-info")
+          .stop()
+          .addClass("opened");
+      }
+    });
+
+    itemClose.on("click", function () {
+      close();
+    });
+
+    function close() {
+      parents.stop().removeClass("opened");
+      $(".design-invis__item .circle").stop().removeClass("active");
+      // $(".design-invis__item").stop().removeClass("active");
+      $(".designer-info").stop().removeClass("opened");
+    }
+  }
+
+  if ($(".custom-size").length > 0) {
+    $(".custom-size").on("click", function () {
+      let bl = $(this);
+      let inputs = bl.parents(".filter-block__body").find("input[type=text]");
+
+      if (!bl.hasClass("checked")) {
+        inputs.attr("disabled", "disabled");
+      } else {
+        inputs.removeAttr("disabled");
+      }
+
+      bl.toggleClass("checked");
+    });
+  }
 });
 
 $(window).on("load", function () {

@@ -10,7 +10,7 @@ $(document).ready(function () {
           slidesPerView: 3,
           spaceBetween: 6,
         },
-        768: {
+        640: {
           slidesPerView: 4,
           spaceBetween: 7,
         },

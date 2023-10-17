@@ -692,14 +692,14 @@ section {
   padding: 25px;
 }
 
-@media (min-width: 1200px) {
-  _:-webkit-any-link,
-  :root .modal-open {
-    padding-right: 17px;
-  }
+// @media (hover: none) and (pointer: coarse) {
+//   body {
+//     &.modal-open {
+//       padding-right: 0;
 
-  _:-webkit-any-link,
-  :root body.compensate-for-scrollbar {
-    padding-right: 17px;
-  }
-}
+//       .header {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }

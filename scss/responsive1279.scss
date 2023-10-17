@@ -107,6 +107,8 @@
   .video-block {
     .video {
       padding-top: calc(320 / 1024 * 100%);
+
+      iframe,
       video {
         object-position: center calc(50% - 80px);
       }
@@ -278,6 +280,7 @@
   .sale {
     font-size: 16px;
     padding: 3px 10px;
+    min-height: 30px;
   }
 
   .product-item__tags .product-item__tag::before {
