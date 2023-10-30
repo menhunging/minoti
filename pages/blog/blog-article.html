@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+    <title>2022 Collection</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon//site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon/safari-pinned-tab.svg" color="#2f3c40">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="../../fonts/stylesheet.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/selectric/selectric.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/micromodal/micromodal.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/fancybox/fancybox.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+</head>
+
+<body>
+
+    <div class="site-wrapper inner-page">
+        <header class="header">
+
+            <div class="header-top">
+
+                <button class="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+
+                <div class="header-search header-col">
+                    <button class="header-search__button">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.9 20.9751L13.325 14.4001C12.825 14.8334 12.2417 15.1709 11.575 15.4126C10.9083 15.6543 10.2 15.7751 9.45 15.7751C7.65 15.7751 6.125 15.1501 4.875 13.9001C3.625 12.6501 3 11.1418 3 9.3751C3 7.60843 3.625 6.1001 4.875 4.8501C6.125 3.6001 7.64167 2.9751 9.425 2.9751C11.1917 2.9751 12.6958 3.6001 13.9375 4.8501C15.1792 6.1001 15.8 7.60843 15.8 9.3751C15.8 10.0918 15.6833 10.7834 15.45 11.4501C15.2167 12.1168 14.8667 12.7418 14.4 13.3251L21 19.8751L19.9 20.9751ZM9.425 14.2751C10.775 14.2751 11.925 13.7959 12.875 12.8376C13.825 11.8793 14.3 10.7251 14.3 9.3751C14.3 8.0251 13.825 6.87093 12.875 5.9126C11.925 4.95426 10.775 4.4751 9.425 4.4751C8.05833 4.4751 6.89583 4.95426 5.9375 5.9126C4.97917 6.87093 4.5 8.0251 4.5 9.3751C4.5 10.7251 4.97917 11.8793 5.9375 12.8376C6.89583 13.7959 8.05833 14.2751 9.425 14.2751Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <span class="header-search__text">Поиск</span>
+                </div>
+
+                <div class="header-adress header-col">
+                    <svg class="header-adress__icon icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_157_937)">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_157_937">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <span class="header-adress__text">г. Москва ул. Улица строение 1 корпус 2</span>
+                </div>
+
+                <div class="logo">
+                    <img src="../../img/svg/logo.svg" alt="logo">
+                </div>
+
+                <a href="#" class="header-basket header-col">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.1749 21.975C6.6749 21.975 6.2499 21.8 5.8999 21.45C5.5499 21.1 5.3749 20.675 5.3749 20.175C5.3749 19.675 5.5499 19.25 5.8999 18.9C6.2499 18.55 6.6749 18.375 7.1749 18.375C7.65824 18.375 8.07907 18.55 8.4374 18.9C8.79573 19.25 8.9749 19.675 8.9749 20.175C8.9749 20.675 8.7999 21.1 8.4499 21.45C8.0999 21.8 7.6749 21.975 7.1749 21.975ZM17.1749 21.975C16.6749 21.975 16.2499 21.8 15.8999 21.45C15.5499 21.1 15.3749 20.675 15.3749 20.175C15.3749 19.675 15.5499 19.25 15.8999 18.9C16.2499 18.55 16.6749 18.375 17.1749 18.375C17.6582 18.375 18.0791 18.55 18.4374 18.9C18.7957 19.25 18.9749 19.675 18.9749 20.175C18.9749 20.675 18.7999 21.1 18.4499 21.45C18.0999 21.8 17.6749 21.975 17.1749 21.975ZM5.8749 5.475L8.6249 11.175H15.8249L18.9499 5.475H5.8749ZM5.1249 3.975H19.8499C20.3832 3.975 20.7207 4.1375 20.8624 4.4625C21.0041 4.7875 20.9582 5.15 20.7249 5.55L17.3499 11.625C17.1832 11.9083 16.9499 12.1542 16.6499 12.3625C16.3499 12.5708 16.0249 12.675 15.6749 12.675H8.0999L6.6999 15.275H18.9749V16.775H6.9249C6.2249 16.775 5.72074 16.5417 5.4124 16.075C5.10407 15.6083 5.10824 15.0833 5.4249 14.5L7.0249 11.55L3.2249 3.5H1.2749V2H4.1999L5.1249 3.975Z"
+                            fill="white" />
+                    </svg>
+                </a>
+
+                <a href="#" class="header-link header-col">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21 11.7682C21 16.6108 17.0442 20.5364 12.1636 20.5364C10.6142 20.5364 9.1586 20.1404 7.8922 19.4454L3 21L4.595 16.2956C3.7904 14.9744 3.327 13.4248 3.327 11.7682C3.327 6.9256 7.2832 3 12.1636 3C17.0446 3 21 6.9256 21 11.7682ZM12.1636 4.3964C8.0668 4.3964 4.7344 7.7034 4.7344 11.7682C4.7344 13.3812 5.2602 14.875 6.1496 16.0902L5.2214 18.828L8.0764 17.9206C9.2494 18.6908 10.6546 19.14 12.1638 19.14C16.26 19.14 19.593 15.8334 19.593 11.7686C19.593 7.7038 16.2602 4.3964 12.1636 4.3964ZM16.6258 13.7876C16.5712 13.6982 16.427 13.6442 16.2106 13.5368C15.9938 13.4294 14.9286 12.9092 14.7306 12.8378C14.532 12.7662 14.3872 12.7302 14.243 12.9452C14.0988 13.1604 13.6836 13.6442 13.557 13.7876C13.4306 13.9314 13.3044 13.9494 13.0876 13.8418C12.8712 13.7344 12.1734 13.5072 11.346 12.7752C10.7022 12.2056 10.2674 11.5024 10.141 11.287C10.0148 11.072 10.1278 10.9558 10.236 10.8488C10.3336 10.7524 10.4528 10.5978 10.561 10.4724C10.6696 10.3468 10.7056 10.2574 10.7774 10.1138C10.85 9.9704 10.8138 9.845 10.7594 9.7372C10.7054 9.6298 10.2718 8.5722 10.0914 8.1418C9.911 7.7118 9.7308 7.7834 9.6042 7.7834C9.478 7.7834 9.3334 7.7654 9.189 7.7654C9.0446 7.7654 8.8098 7.8192 8.6112 8.0342C8.4128 8.2494 7.8534 8.7694 7.8534 9.8268C7.8534 10.8844 8.6292 11.9062 8.7378 12.0494C8.846 12.1926 10.2358 14.4334 12.4378 15.294C14.64 16.1542 14.64 15.8672 15.0372 15.8312C15.434 15.7954 16.3184 15.3114 16.4996 14.8098C16.6796 14.3074 16.6796 13.8772 16.6258 13.7876Z"
+                            fill="white" />
+                    </svg>
+                </a>
+
+                <div class="header-phone header-col">
+
+                    <a class="link-wrap-icon" href="tel:88001234567">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_323_334)">
+                                <path
+                                    d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_323_334">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+
+                    <a href="tel:88001234567" class="header-phone-link">
+                        <span class="header-phone__text">8 (800) 123 45 67</span>
+                    </a>
+
+                    <a href="#" class="header-phone-call" data-modal="modal-back-call">Обратный звонок</a>
+                </div>
+
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Коллекции</a></li>
+                    <li><a href="#">Наш шоурум</a></li>
+                    <li><a href="#">Дизайнеры</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <div class="menu-mobile-info">
+
+                </div>
+
+                <button class="menu-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.2248 18.8248L5.1748 17.7748L10.9498 11.9998L5.1748 6.2248L6.2248 5.1748L11.9998 10.9498L17.7748 5.1748L18.8248 6.2248L13.0498 11.9998L18.8248 17.7748L17.7748 18.8248L11.9998 13.0498L6.2248 18.8248Z"
+                            fill="#333333" />
+                    </svg>
+                </button>
+
+            </nav>
+
+            <div class="menu-overlay"></div>
+
+        </header>
+
+        <main class="main">
+            <section class="breadcrumbs">
+                <ul class="breadcrumbs-list">
+                    <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumbs-item"><a href="#">Блог</a></li>
+                    <li class="breadcrumbs-item"><span>2022 Collection</span></li>
+                </ul>
+
+                <a href="#" class="mobile-back">
+
+                    <svg class="mobile-back__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.5303 5.46967C14.8232 5.76256 14.8232 6.23744 14.5303 6.53033L9.06066 12L14.5303 17.4697C14.8232 17.7626 14.8232 18.2374 14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303L7.46967 12.5303C7.17678 12.2374 7.17678 11.7626 7.46967 11.4697L13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967Z"
+                            fill="#333333" />
+                    </svg>
+
+                    <span class="mobile-back__text">Блог</span>
+                </a>
+            </section>
+
+            <section class="title-page">
+                <h1 class="section-title caption">2022 Collection</h1>
+            </section>
+
+            <section class="section-picture">
+                <picture class='picture'>
+                    <source type="image/webp" srcset="../../img/pic-showroom.webp" />
+                    <img src="../../img/pic-showroom.jpg" alt="" />
+                </picture>
+            </section>
+
+            <section class="text-simple">
+                <div class="text-simple__content">
+                    <h2>Идеальная презентация коллекции бренда 2022 года</h2>
+
+                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной презентацией коллекции
+                        бренда 2022 года:</p>
+
+                    <ul>
+                        <li>Не просто выставочное пространство, а живописное и изысканное место: настоящий павильон,
+                            посвященный Минотти.</li>
+
+                        <li>
+                            Архитектура площадью 3200 кв. м с огромным эстетическим и объемным эффектом, который
+                            обусловлен не только обширностью пространства, но и его структурой: двухуровневый дом с
+                            пересекающимися точками обзора, которые позволяют четко воспринимать интерьер.
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="slider-pictures">
+                <div class="slider-pictures__slider swiper slider-simple">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture class='picture'>
+                                <a href="../../img/pic-collections1.webp" data-fancybox></a>
+                                <source type="image/webp" srcset="../../img/pic-collections1.webp" />
+                                <img src="../../img/pic-collections1.jpg" alt="" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class='picture'>
+                                <a href="../../img/pic-collections2.webp" data-fancybox></a>
+                                <source type="image/webp" srcset="../../img/pic-collections2.webp" />
+                                <img src="../../img/pic-collections2.jpg" alt="" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class='picture'>
+                                <a href="../../img/pic-collections3.webp" data-fancybox></a>
+                                <source type="image/webp" srcset="../../img/pic-collections3.webp" />
+                                <img src="../../img/pic-collections3.jpg" alt="" />
+                            </picture>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture class='picture'>
+                                <a href="../../img/pic-collections1.webp" data-fancybox></a>
+                                <source type="image/webp" srcset="../../img/pic-collections1.webp" />
+                                <img src="../../img/pic-collections1.jpg" alt="" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class='picture'>
+                                <a href="../../img/pic-collections2.webp" data-fancybox></a>
+                                <source type="image/webp" srcset="../../img/pic-collections2.webp" />
+                                <img src="../../img/pic-collections2.jpg" alt="" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class='picture'>
+                                <a href="../../img/pic-collections3.webp" data-fancybox></a>
+                                <source type="image/webp" srcset="../../img/pic-collections3.webp" />
+                                <img src="../../img/pic-collections3.jpg" alt="" />
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="swiper-controls">
+                        <button class="swiper-button-prev">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19.3761 24.7071C19.7667 24.3166 19.7667 23.6834 19.3761 23.2929L12.0833 16L19.3761 8.70707C19.7667 8.31654 19.7667 7.68347 19.3761 7.29294C18.9856 6.9024 18.3525 6.9024 17.962 7.29294L9.96196 15.2929C9.57144 15.6835 9.57144 16.3165 9.96196 16.7071L17.962 24.7071C18.3525 25.0976 18.9856 25.0976 19.3761 24.7071Z"
+                                    fill="#333333" />
+                            </svg>
+                        </button>
+                        <button class="swiper-button-next">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.6288 24.7071C12.2382 24.3166 12.2382 23.6834 12.6288 23.2929L19.9216 16L12.6288 8.70707C12.2382 8.31654 12.2382 7.68347 12.6288 7.29294C13.0193 6.9024 13.6524 6.9024 14.0429 7.29294L22.0429 15.2929C22.4334 15.6835 22.4334 16.3165 22.0429 16.7071L14.0429 24.7071C13.6524 25.0976 13.0193 25.0976 12.6288 24.7071Z"
+                                    fill="#333333" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </section>
+
+            <section class="text-simple">
+
+                <picture class="picture">
+                    <source type="image/webp" srcset="../../img/pic-about.webp">
+                    <img src="../../img/pic-about.jpg" alt="">
+                </picture>
+
+                <div class="text-simple__content">
+
+                    <h2>Уникальный эффект</h2>
+
+                    <p>Ярко характеризующий элемент этого объема проявляется благодаря умелому и беспрецедентному
+                        использованию цемента, воссоздающего уникальный эффект от его периметра внутрь: цементный блок
+                        представляет собой перфорированную призму, разработанную Minotti Studio, которая образует целые
+                        материальные стены, обозначающие границу между оставляя постоянную свободу визуального диалога
+                        между внутренним и внешним миром.</p>
+                    <p>
+                        Оказавшись внутри, вы попадаете в ощущение пространства за пределами границ, больших зеленых
+                        зон, которые окружают комнаты как бы в объятиях, создавая непрерывный переход между внутренней и
+                        внешней обстановкой.
+                    </p>
+                </div>
+            </section>
+
+            <section class="video-section">
+                <div class="video-block">
+                    <div class="video">
+                        <video poster="../../img/pic-grettings.webp" loop="" muted="" playsinline=""
+                            data-mobile="../../video/loda.mp4" data-desktop="../../video/loda.mp4"
+                            src="../../video/loda.mp4">
+                            <source src="" type="video/mp4">
+                        </video>
+
+                        <button class="btn-play">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.3335 50.4666V13.1333L50.6668 31.8L21.3335 50.4666ZM25.3335 43.2L43.2668 31.8L25.3335 20.4V43.2Z"
+                                    fill="white"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-simple text-simple--right">
+
+                <picture class="picture">
+                    <source type="image/webp" srcset="../../img/pic-about.webp">
+                    <img src="../../img/pic-about.jpg" alt="">
+                </picture>
+
+                <div class="text-simple__content">
+                    <p>
+                        Коллекция, размещенная в этой впечатляющей архитектуре, подчеркивает способность компании
+                        двигаться вперед и исследовать новые творческие горизонты, используя формы, воображаемые и
+                        культурные отсылки из разных уголков мира, создавая диалог между ключевыми предметами мебели
+                        Коллекции 2022 года и предметами мебели из коллекции 2022 года . последних коллекций,
+                        подчеркивая, как дизайн и эстетика, разработанные брендом совместно с дизайнерами, постоянно
+                        развиваются, следуя пути, соответствующему его идентичности.
+                    </p>
+
+                    <p>
+
+                        Таким образом, новые персонажи коллекции 2022 года , такие как система сидений Horizonte от
+                        Марсио Когана / студии mk27 и системы Goodman и Twiggy , разработанные Родольфо Дордони ,
+                        дополняют семейство сидений Sendai , Yoko и Lars от японско-датского дизайнерского дуэта Inoda+.
+                        Sveje , а также бестселлеры, такие как Roger , Connery , Brasilia и Torii , которые теперь стали
+                        культовыми моделями в коллекции Minotti, представленные здесь наряду с новыми дополнениями,
+                        чтобы придать новый импульс и новый потенциал для использования и комбинаций.
+                    </p>
+                </div>
+            </section>
+
+            <section class="slider-other">
+
+                <h2 class="section-title caption">Товары из статьи</h2>
+
+                <div class="slider-other__slider swiper slider-simple">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__picture">
+                                    <a href="#"></a>
+                                    <picture class='picture'>
+                                        <source type="image/webp" srcset="../../img/product1.webp" />
+                                        <img src="../../img/product1.jpg" alt="" />
+                                    </picture>
+
+                                    <picture class='picture picture-hover'>
+                                        <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                        <img src="../../img/product1-hover.jpg" alt="" />
+                                    </picture>
+
+                                    <div class="product-item__tags">
+                                        <span class="product-item__tag">В наличии</span>
+                                        <span class="product-item__tag">Новинка</span>
+                                    </div>
+
+                                    <span class="sale"> -10% </span>
+                                </div>
+                                <div class="product-item__body">
+                                    <a href="#" class="product-item__name">Dylan</a>
+
+                                    <ul class="product-item__info">
+                                        <li>
+                                            <span class="product-item__title">Дизайнер:</span>
+                                            <span class="product-item__data">Rodolfo Dordoni</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-item__title">Размер:</span>
+                                            <span class="product-item__data">250 x 150</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price-block">
+                                        <span class="price-old">1 100 254 ₽</span>
+                                        <span class="price">1 100 254 ₽</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-controls">
+                        <button class="swiper-button-prev">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19.3761 24.7071C19.7667 24.3166 19.7667 23.6834 19.3761 23.2929L12.0833 16L19.3761 8.70707C19.7667 8.31654 19.7667 7.68347 19.3761 7.29294C18.9856 6.9024 18.3525 6.9024 17.962 7.29294L9.96196 15.2929C9.57144 15.6835 9.57144 16.3165 9.96196 16.7071L17.962 24.7071C18.3525 25.0976 18.9856 25.0976 19.3761 24.7071Z"
+                                    fill="#333333" />
+                            </svg>
+                        </button>
+                        <button class="swiper-button-next">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.6288 24.7071C12.2382 24.3166 12.2382 23.6834 12.6288 23.2929L19.9216 16L12.6288 8.70707C12.2382 8.31654 12.2382 7.68347 12.6288 7.29294C13.0193 6.9024 13.6524 6.9024 14.0429 7.29294L22.0429 15.2929C22.4334 15.6835 22.4334 16.3165 22.0429 16.7071L14.0429 24.7071C13.6524 25.0976 13.0193 25.0976 12.6288 24.7071Z"
+                                    fill="#333333" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="section-picture">
+                <picture class='picture'>
+                    <source type="image/webp" srcset="../../img/pic-showroom.webp" />
+                    <img src="../../img/pic-showroom.jpg" alt="" />
+                </picture>
+            </section>
+
+            <section class="text-simple">
+                <div class="text-simple__content">
+                    <p>То же самое касается и внешнего мира, который, как всегда было в философии дизайна компании, не
+                        отличается от языка внутреннего мира, а, скорее, развивает и расширяет его. Таким образом, новые
+                        предметы 2022 года, такие как Patio Teak от GamFratesi и Belt Cord Outdoor от Rodolfo Dordoni ,
+                        существуют в синергии с недавними дизайнами мебели под открытым небом, такими как Lido Cord
+                        Outdoor , Torii Nest Outdoor , Florida и Quadrado . На выставке нет жестких, заранее
+                        установленных границ для представления этой мебели, а только ощущение плавности, в котором
+                        архитектура-хозяин рассказывает свою историю и подчеркивает ее изысканность.</p>
+
+                    <p>
+                        Изделия гармонично вписываются в эту непрерывность, в которой только аксессуары, ткани и
+                        предметы искусства создают контрастные акценты за счет использования ярких цветов и блестящих
+                        поверхностей, органично сочетаясь со стилем и дизайнерскими элементами коллекции 2022 года ,
+                        убаюкивающей изысканный баланс между 1970-ми годами и связью японской культуры со скандинавским
+                        вкусом.
+                        Новая коллекция и великая классика создают архитектурную среду, переносящую посетителя в
+                        воображаемое и вызывающее воспоминания пространство далеко за пределами выставки.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section-picture section-picture__pictures">
+                <picture class='picture'>
+                    <a href="../../img/pic-showroom1.webp" data-fancybox="gallary1"></a>
+                    <source type="image/webp" srcset="../../img/pic-showroom1.webp" />
+                    <img src="../../img/pic-showroom1.jpg" alt="" />
+                </picture>
+
+                <picture class='picture'>
+                    <a href="../../img/pic-showroom2.webp" data-fancybox="gallary1"></a>
+                    <source type="image/webp" srcset="../../img/pic-showroom2.webp" />
+                    <img src="../../img/pic-showroom2.jpg" alt="" />
+                </picture>
+            </section>
+
+            <section class="slider-other">
+
+                <h2 class="section-title caption">Читать другие статьи</h2>
+
+                <div class="slider-other__slider swiper slider-simple">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <picture class='picture'>
+                                    <a href="#"></a>
+                                    <source type="image/webp" srcset="../../img/pic-blog.webp" />
+                                    <img src="../../img/pic-blog.jpg" alt="" />
+                                </picture>
+                                <div class="blog-item__content">
+                                    <a href="#" class="blog-item__link">2022 Collection</a>
+                                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной
+                                        презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти На 60-й выставке Salone del
+                                        Mobile.Milano
+                                        павильон Minotti стал идеальной презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти</p>
+                                    <a href="#" class="blog-item__more">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <picture class='picture'>
+                                    <a href="#"></a>
+                                    <source type="image/webp" srcset="../../img/pic-blog.webp" />
+                                    <img src="../../img/pic-blog.jpg" alt="" />
+                                </picture>
+                                <div class="blog-item__content">
+                                    <a href="#" class="blog-item__link">2022 Collection</a>
+                                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной
+                                        презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти На 60-й выставке Salone del
+                                        Mobile.Milano
+                                        павильон Minotti стал идеальной презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти</p>
+                                    <a href="#" class="blog-item__more">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <picture class='picture'>
+                                    <a href="#"></a>
+                                    <source type="image/webp" srcset="../../img/pic-blog.webp" />
+                                    <img src="../../img/pic-blog.jpg" alt="" />
+                                </picture>
+                                <div class="blog-item__content">
+                                    <a href="#" class="blog-item__link">2022 Collection</a>
+                                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной
+                                        презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти На 60-й выставке Salone del
+                                        Mobile.Milano
+                                        павильон Minotti стал идеальной презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти</p>
+                                    <a href="#" class="blog-item__more">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <picture class='picture'>
+                                    <a href="#"></a>
+                                    <source type="image/webp" srcset="../../img/pic-blog.webp" />
+                                    <img src="../../img/pic-blog.jpg" alt="" />
+                                </picture>
+                                <div class="blog-item__content">
+                                    <a href="#" class="blog-item__link">2022 Collection</a>
+                                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной
+                                        презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти На 60-й выставке Salone del
+                                        Mobile.Milano
+                                        павильон Minotti стал идеальной презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти</p>
+                                    <a href="#" class="blog-item__more">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <picture class='picture'>
+                                    <a href="#"></a>
+                                    <source type="image/webp" srcset="../../img/pic-blog.webp" />
+                                    <img src="../../img/pic-blog.jpg" alt="" />
+                                </picture>
+                                <div class="blog-item__content">
+                                    <a href="#" class="blog-item__link">2022 Collection</a>
+                                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной
+                                        презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти На 60-й выставке Salone del
+                                        Mobile.Milano
+                                        павильон Minotti стал идеальной презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти</p>
+                                    <a href="#" class="blog-item__more">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <picture class='picture'>
+                                    <a href="#"></a>
+                                    <source type="image/webp" srcset="../../img/pic-blog.webp" />
+                                    <img src="../../img/pic-blog.jpg" alt="" />
+                                </picture>
+                                <div class="blog-item__content">
+                                    <a href="#" class="blog-item__link">2022 Collection</a>
+                                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной
+                                        презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти На 60-й выставке Salone del
+                                        Mobile.Milano
+                                        павильон Minotti стал идеальной презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти</p>
+                                    <a href="#" class="blog-item__more">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <picture class='picture'>
+                                    <a href="#"></a>
+                                    <source type="image/webp" srcset="../../img/pic-blog.webp" />
+                                    <img src="../../img/pic-blog.jpg" alt="" />
+                                </picture>
+                                <div class="blog-item__content">
+                                    <a href="#" class="blog-item__link">2022 Collection</a>
+                                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной
+                                        презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти На 60-й выставке Salone del
+                                        Mobile.Milano
+                                        павильон Minotti стал идеальной презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти</p>
+                                    <a href="#" class="blog-item__more">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <picture class='picture'>
+                                    <a href="#"></a>
+                                    <source type="image/webp" srcset="../../img/pic-blog.webp" />
+                                    <img src="../../img/pic-blog.jpg" alt="" />
+                                </picture>
+                                <div class="blog-item__content">
+                                    <a href="#" class="blog-item__link">2022 Collection</a>
+                                    <p>На 60-й выставке Salone del Mobile.Milano павильон Minotti стал идеальной
+                                        презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти На 60-й выставке Salone del
+                                        Mobile.Milano
+                                        павильон Minotti стал идеальной презентацией
+                                        коллекции
+                                        бренда 2022 года . Не просто выставочное пространство, а живописное и изысканное
+                                        место:
+                                        настоящий павильон, посвященный Минотти</p>
+                                    <a href="#" class="blog-item__more">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-controls">
+                        <button class="swiper-button-prev">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19.3761 24.7071C19.7667 24.3166 19.7667 23.6834 19.3761 23.2929L12.0833 16L19.3761 8.70707C19.7667 8.31654 19.7667 7.68347 19.3761 7.29294C18.9856 6.9024 18.3525 6.9024 17.962 7.29294L9.96196 15.2929C9.57144 15.6835 9.57144 16.3165 9.96196 16.7071L17.962 24.7071C18.3525 25.0976 18.9856 25.0976 19.3761 24.7071Z"
+                                    fill="#333333" />
+                            </svg>
+                        </button>
+                        <button class="swiper-button-next">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.6288 24.7071C12.2382 24.3166 12.2382 23.6834 12.6288 23.2929L19.9216 16L12.6288 8.70707C12.2382 8.31654 12.2382 7.68347 12.6288 7.29294C13.0193 6.9024 13.6524 6.9024 14.0429 7.29294L22.0429 15.2929C22.4334 15.6835 22.4334 16.3165 22.0429 16.7071L14.0429 24.7071C13.6524 25.0976 13.0193 25.0976 12.6288 24.7071Z"
+                                    fill="#333333" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="logo">
+                <img src="../../img/svg/logo.svg" alt="logo">
+            </div>
+
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Коллекции</a></li>
+                    <li><a href="#">Наш шоурум</a></li>
+                    <li><a href="#">Дизайнеры</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <ul class="foter-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Договор оферты</a></li>
+            </ul>
+
+            <div class="copyRight">&copy; Minotti, <span class="thisYear"></span></div>
+        </footer>
+    </div>
+
+    <div class="search-invis">
+        <section class="result-search">
+            <div class="result-search__head">
+                <input type="text" placeholder="Поиск">
+                <button class="btn-close-search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_245_2659)">
+                            <path
+                                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                                fill="#333333" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_245_2659">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </button>
+            </div>
+
+            <div class="result-search__body">
+                <div class="product-list">
+                    <div class="product-item">
+                        <div class="product-item__picture">
+                            <a href="#"></a>
+                            <picture class='picture'>
+                                <source type="image/webp" srcset="../../img/product1.webp" />
+                                <img src="../../img/product1.jpg" alt="" />
+                            </picture>
+
+                            <picture class='picture picture-hover'>
+                                <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                <img src="../../img/product1-hover.jpg" alt="" />
+                            </picture>
+
+                            <div class="product-item__tags">
+                                <span class="product-item__tag">В наличии</span>
+                                <span class="product-item__tag">Новинка</span>
+                            </div>
+
+                            <span class="sale"> -10% </span>
+                        </div>
+                        <div class="product-item__body">
+                            <a href="#" class="product-item__name">Dylan</a>
+
+                            <ul class="product-item__info">
+                                <li>
+                                    <span class="product-item__title">Дизайнер:</span>
+                                    <span class="product-item__data">Rodolfo Dordoni</span>
+                                </li>
+                                <li>
+                                    <span class="product-item__title">Размер:</span>
+                                    <span class="product-item__data">250 x 150</span>
+                                </li>
+                            </ul>
+
+                            <div class="price-block">
+                                <span class="price-old">1 100 254 ₽</span>
+                                <span class="price">1 100 254 ₽</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__picture">
+                            <a href="#"></a>
+                            <picture class='picture'>
+                                <source type="image/webp" srcset="../../img/product1.webp" />
+                                <img src="../../img/product1.jpg" alt="" />
+                            </picture>
+
+                            <picture class='picture picture-hover'>
+                                <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                <img src="../../img/product1-hover.jpg" alt="" />
+                            </picture>
+
+                            <div class="product-item__tags">
+                                <span class="product-item__tag">В наличии</span>
+                                <span class="product-item__tag">Новинка</span>
+                            </div>
+
+                            <span class="sale"> -10% </span>
+                        </div>
+                        <div class="product-item__body">
+                            <a href="#" class="product-item__name">Dylan</a>
+
+                            <ul class="product-item__info">
+                                <li>
+                                    <span class="product-item__title">Дизайнер:</span>
+                                    <span class="product-item__data">Rodolfo Dordoni</span>
+                                </li>
+                                <li>
+                                    <span class="product-item__title">Размер:</span>
+                                    <span class="product-item__data">250 x 150</span>
+                                </li>
+                            </ul>
+
+                            <div class="price-block">
+                                <span class="price-old">1 100 254 ₽</span>
+                                <span class="price">1 100 254 ₽</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__picture">
+                            <a href="#"></a>
+                            <picture class='picture'>
+                                <source type="image/webp" srcset="../../img/product1.webp" />
+                                <img src="../../img/product1.jpg" alt="" />
+                            </picture>
+
+                            <picture class='picture picture-hover'>
+                                <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                <img src="../../img/product1-hover.jpg" alt="" />
+                            </picture>
+
+                            <div class="product-item__tags">
+                                <span class="product-item__tag">В наличии</span>
+                                <span class="product-item__tag">Новинка</span>
+                            </div>
+
+                            <span class="sale"> -10% </span>
+                        </div>
+                        <div class="product-item__body">
+                            <a href="#" class="product-item__name">Dylan</a>
+
+                            <ul class="product-item__info">
+                                <li>
+                                    <span class="product-item__title">Дизайнер:</span>
+                                    <span class="product-item__data">Rodolfo Dordoni</span>
+                                </li>
+                                <li>
+                                    <span class="product-item__title">Размер:</span>
+                                    <span class="product-item__data">250 x 150</span>
+                                </li>
+                            </ul>
+
+                            <div class="price-block">
+                                <span class="price-old">1 100 254 ₽</span>
+                                <span class="price">1 100 254 ₽</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__picture">
+                            <a href="#"></a>
+                            <picture class='picture'>
+                                <source type="image/webp" srcset="../../img/product1.webp" />
+                                <img src="../../img/product1.jpg" alt="" />
+                            </picture>
+
+                            <picture class='picture picture-hover'>
+                                <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                <img src="../../img/product1-hover.jpg" alt="" />
+                            </picture>
+
+                            <div class="product-item__tags">
+                                <span class="product-item__tag">В наличии</span>
+                                <span class="product-item__tag">Новинка</span>
+                            </div>
+
+                            <span class="sale"> -10% </span>
+                        </div>
+                        <div class="product-item__body">
+                            <a href="#" class="product-item__name">Dylan</a>
+
+                            <ul class="product-item__info">
+                                <li>
+                                    <span class="product-item__title">Дизайнер:</span>
+                                    <span class="product-item__data">Rodolfo Dordoni</span>
+                                </li>
+                                <li>
+                                    <span class="product-item__title">Размер:</span>
+                                    <span class="product-item__data">250 x 150</span>
+                                </li>
+                            </ul>
+
+                            <div class="price-block">
+                                <span class="price-old">1 100 254 ₽</span>
+                                <span class="price">1 100 254 ₽</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__picture">
+                            <a href="#"></a>
+                            <picture class='picture'>
+                                <source type="image/webp" srcset="../../img/product1.webp" />
+                                <img src="../../img/product1.jpg" alt="" />
+                            </picture>
+
+                            <picture class='picture picture-hover'>
+                                <source type="image/webp" srcset="../../img/product1-hover.webp" />
+                                <img src="../../img/product1-hover.jpg" alt="" />
+                            </picture>
+
+                            <div class="product-item__tags">
+                                <span class="product-item__tag">В наличии</span>
+                                <span class="product-item__tag">Новинка</span>
+                            </div>
+
+                            <span class="sale"> -10% </span>
+                        </div>
+                        <div class="product-item__body">
+                            <a href="#" class="product-item__name">Dylan</a>
+
+                            <ul class="product-item__info">
+                                <li>
+                                    <span class="product-item__title">Дизайнер:</span>
+                                    <span class="product-item__data">Rodolfo Dordoni</span>
+                                </li>
+                                <li>
+                                    <span class="product-item__title">Размер:</span>
+                                    <span class="product-item__data">250 x 150</span>
+                                </li>
+                            </ul>
+
+                            <div class="price-block">
+                                <span class="price-old">1 100 254 ₽</span>
+                                <span class="price">1 100 254 ₽</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-pagination">
+                    <a href="#" class="btn">все результаты поиска</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="filter-overlay"></div>
+    <div class="search-overlay"></div>
+
+    <div class="micromodal-slide modal" id="modal-back-call" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.22499 18.825L5.17499 17.775L10.95 12L5.17499 6.225L6.22499 5.175L12 10.95L17.775 5.175L18.825 6.225L13.05 12L18.825 17.775L17.775 18.825L12 13.05L6.22499 18.825Z"
+                                fill="#002246" />
+                        </svg>
+
+                    </button>
+                    <div class="modal__content" autocomplete="off">
+                        <div class="modal-custom">
+                            <h2 class="caption modals-caption">Заказать обратный звонок</h2>
+                            <span class="modals-text">Наши менеджеры свяжутся с Вами</span>
+
+                            <form class="input-form">
+                                <div class="input-item">
+                                    <input type="text" placeholder="Ваше имя*">
+                                </div>
+                                <div class="input-item">
+                                    <input type="text" placeholder="Ваш телефон*" class="phone-input">
+                                </div>
+                                <button class="btn btn--gray">Связаться со мной</button>
+                                <span class="text">Нажимая на кнопку, вы даете <a href="#">согласие на обработку
+                                        персональных
+                                        данных</a></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="modal-success" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.22499 18.825L5.17499 17.775L10.95 12L5.17499 6.225L6.22499 5.175L12 10.95L17.775 5.175L18.825 6.225L13.05 12L18.825 17.775L17.775 18.825L12 13.05L6.22499 18.825Z"
+                                fill="#002246" />
+                        </svg>
+
+                    </button>
+                    <div class="modal__content" autocomplete="off">
+                        <div class="modal-custom">
+                            <h2 class="caption modals-caption">Ваша заявка успешно отправлена!</h2>
+                            <span class="modals-text">Наши менеджеры свяжутся с Вами</span>
+
+                            <a href="/" class="btn modal-link">вернуться на главную</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../libs/jquery/jquery-3.6.4.min.js"></script>
+    <script src="../../libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../../libs/selectric/jquery.selectric.min.js"></script>
+    <script src="../../libs/micromodal/micromodal.min.js"></script>
+    <script src="../../libs/tabslet/jquery.tabslet.min.js"></script>
+    <script src="../../libs/fancybox/fancybox.umd.js"></script>
+    <script src="../../libs/inputmask/jquery.inputmask.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="blog.js"></script>
+</body>
+
+</html>

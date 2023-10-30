@@ -470,6 +470,10 @@ input {
       }
     }
   }
+
+  .picture{
+    padding-top: calc(200 / 400 * 100%);
+  }
 }
 
 .selectric-open {
@@ -691,15 +695,3 @@ section {
   border: solid 1px $colorSimple;
   padding: 25px;
 }
-
-// @media (hover: none) and (pointer: coarse) {
-//   body {
-//     &.modal-open {
-//       padding-right: 0;
-
-//       .header {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }

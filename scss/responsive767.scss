@@ -206,6 +206,7 @@
     gap: 20px 16px;
   }
 
+  .products-list,
   .product-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -338,8 +339,9 @@
     font-size: 14px;
   }
 
+  .result-search__body,
   .result-search {
-    .product-list {
+    .products-list {
       grid-template-columns: 1fr;
     }
   }

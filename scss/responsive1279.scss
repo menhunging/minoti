@@ -254,6 +254,7 @@
     line-height: 20px;
   }
 
+  .products-list,
   .product-list {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -388,8 +389,9 @@
     font-size: 18px;
   }
 
+  .result-search__body,
   .result-search {
-    .product-list {
+    .products-list {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -400,7 +402,7 @@
   }
 
   .result-search__body {
-    max-height: 70vh;
+    max-height: 90vh;
     overflow: auto;
   }
 
@@ -516,5 +518,17 @@
 
   .designer-list {
     gap: 30px 16px;
+  }
+
+  .blog-item .picture {
+    height: 120px;
+  }
+
+  .blog-item--big .picture {
+    height: 426px;
+  }
+
+  .blog-item--big .blog-item__content p {
+    -webkit-line-clamp: 5;
   }
 }

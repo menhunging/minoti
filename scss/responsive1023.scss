@@ -488,4 +488,40 @@
   .sale {
     font-size: 14px;
   }
+
+  .blog-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blog-item .picture {
+    height: 185px;
+  }
+
+  .blog-item--big .picture {
+    height: 389px;
+  }
+
+  .blog-item__content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .blog-item__more {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .blog-item__link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .blog-item__content p {
+    min-height: 120px;
+    -webkit-line-clamp: 6;
+  }
+
+  .blog-item--big .blog-item__content p {
+    -webkit-line-clamp: 3;
+  }
 }
