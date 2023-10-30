@@ -4,6 +4,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: $colorSimple;
+  transition: all 0s !important;
 
   &.hidden {
     overflow: hidden;
@@ -694,4 +695,34 @@ section {
   @include border-radius(10px);
   border: solid 1px $colorSimple;
   padding: 25px;
+}
+
+
+@media (min-width: 1200px) {
+  _:-webkit-any-link,
+  :root body.modal-open {
+    padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
+  }
+
+  _:-webkit-any-link,
+  :root .hidden {
+    padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
+  }
+
+  _:-webkit-any-link,
+  :root body.compensate-for-scrollbar {
+    padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
+  }
 }

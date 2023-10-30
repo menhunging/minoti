@@ -270,9 +270,7 @@ $(document).ready(function () {
       },
 
       onClose: () => {
-        setTimeout(() => {
-          $("body").removeClass("modal-open");
-        }, 300);
+        $("body").removeClass("modal-open");
       },
     });
 
@@ -542,9 +540,7 @@ function openModal(modal) {
 
 function closeModal(modal) {
   MicroModal.close(modal);
-  setTimeout(() => {
-    $("body").removeClass("modal-open");
-  }, 300);
+  $("body").removeClass("modal-open");
 }
 
 function initMobileSliderPicture() {

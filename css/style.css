@@ -203,6 +203,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: rgb(51, 51, 51);
+  transition: all 0s !important;
 }
 body.hidden {
   overflow: hidden;
@@ -929,6 +930,32 @@ section {
   padding: 25px;
 }
 
+@media (min-width: 1200px) {
+  _:-webkit-any-link,
+  :root body.modal-open {
+    padding-right: 17px;
+  }
+  _:-webkit-any-link .header,
+  :root body.modal-open .header {
+    width: calc(100% - 17px);
+  }
+  _:-webkit-any-link,
+  :root .hidden {
+    padding-right: 17px;
+  }
+  _:-webkit-any-link .header,
+  :root .hidden .header {
+    width: calc(100% - 17px);
+  }
+  _:-webkit-any-link,
+  :root body.compensate-for-scrollbar {
+    padding-right: 17px;
+  }
+  _:-webkit-any-link .header,
+  :root body.compensate-for-scrollbar .header {
+    width: calc(100% - 17px);
+  }
+}
 .btn {
   -webkit-appearance: none;
   -webkit-border-radius: 10px;
@@ -1080,7 +1107,6 @@ h3 {
   z-index: 5;
   background: rgba(51, 51, 51, 0.8);
   backdrop-filter: blur(8px);
-  transition: width 0.3s;
 }
 .header .icon {
   width: 24px;
